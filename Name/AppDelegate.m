@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Monitor.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[Monitor shareInstance] beginMonitor];
     return YES;
 }
 
